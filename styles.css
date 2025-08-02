@@ -2,16 +2,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1e1e1e; /* base background */
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px; /* grid size */
+    color: #ffffff;
     line-height: 1.6;
+    text-align: center;
 }
 
 header {
     background: url('minecraft-bg.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding-top: 90px;
+    padding-bottom: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -31,7 +37,7 @@ main {
 }
 
 section {
-    background: white;
+    background: rgb(57, 86, 90);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -39,9 +45,10 @@ section {
 }
 
 h2 {
-    color: #4a4a4a;
-    border-bottom: 2px solid #8b5cf6;
+    color: #ffffff;
+    border-bottom: 2px solid #51cfaa;
     padding-bottom: 5px;
+    text-align: center;
 }
 
 ul {
@@ -55,7 +62,7 @@ ul li {
 }
 
 ul li strong {
-    color: #8b5cf6;
+    color: #51cfaa;
 }
 
 .join {
@@ -64,12 +71,12 @@ ul li strong {
 
 .join .highlight {
     font-weight: bold;
-    color: #8b5cf6;
+    color: #51cfaa;
     font-size: 1.3em;
 }
 
 .join a {
-    color: #8b5cf6;
+    color: #51cfaa;
     text-decoration: none;
 }
 
@@ -80,16 +87,20 @@ ul li strong {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #8b5cf6;
-    color: white;
+    background-color: #51cfaa;
+    border: 2px solid white;
+    color: white !important;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2em;
-    transition: background-color 0.3s;
+    box-shadow: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .button:hover {
-    background-color: #7c3aed;
+    background-color: #287c63;
+    color: white !important;
+    box-shadow: 0 0 15px 4px rgba(119, 255, 214, 0.6); /* glow effect */
 }
 
 footer {
