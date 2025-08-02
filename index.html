@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XelaCraft</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>XelaCraft</h1>
+    <p>Your new favorite Minecraft server</p>
+  </header>
+
+  <main>
+    <section class="info-card">
+      <h2>Server IP</h2>
+      <p><strong>mc.xelacraft.us</strong></p>
+      <button onclick="copyIP()">Copy IP</button>
+    </section>
+
+    <section class="about">
+      <h2>About the Server</h2>
+      <p>
+        XelaCraft offers unique survival, duels, and mini-game experiences.
+        Join now and become part of our growing community!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 XelaCraft. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function copyIP() {
+      navigator.clipboard.writeText("mc.xelacraft.us");
+      alert("Server IP copied to clipboard!");
+    }
+  </script>
+</body>
+</html>
